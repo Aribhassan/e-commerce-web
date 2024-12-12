@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"; // Make sure this exists in the right location
-import Header from "./components/Header";
+import Logocart from "./components/logoWithCartButton";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Topbar from "./components/Topbar";
-
+import Header from "./components/header"
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400"],
@@ -24,8 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} antialiased`}>
-        <Topbar />
         <Header />
+        <Logocart />
         <Navbar />
 
         {children}

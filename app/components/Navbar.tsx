@@ -19,16 +19,16 @@ const Navbar = () => {
           <Link href="/" className="text-[#007580] text-[14px] font-medium">
             Home
           </Link>
-          <Link href="/product" className="text-[14px] font-medium">
+          <Link href="/product" className="text-[14px] font-medium hover:text-[#007580] ">
             Shop
           </Link>
-          <Link href="/product" className="text-[14px] font-medium">
+          <Link href="/product" className="text-[14px] font-medium hover:text-[#007580]">
             Product
           </Link>
-          <Link href="/product" className="text-[14px] font-medium">
+          <Link href="/product" className="text-[14px] font-medium hover:text-[#007580]">
             Pages
           </Link>
-          <Link href="/about" className="text-[14px] font-medium">
+          <Link href="/about" className="text-[14px] font-medium hover:text-[#007580]">
             About
           </Link>
         </div>

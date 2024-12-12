@@ -18,7 +18,7 @@ export default function Footer() {
           <div className="flex flex-col w-full  md:w-[320px] items-start">
             <div className="flex items-center gap-2">
               <Image
-                src="/img/logo/logo.png"
+                src="/navbar-logo.png"
                 alt="logo"
                 width={40}
                 height={40}
@@ -192,9 +192,9 @@ export default function Footer() {
         {/* Footer Bottom */}
         <div className="flex justify-between items-center flex-wrap text-[#9A9CAA] border-t pt-8">
           <p>
-            © 2021 - Blogy - Designed & Developed by{" "}
-            <a href="#" className="text-[#272343] hover:underline">
-              Zakirsoft
+            © 2024 - Developed by{" "}
+            <a href="#" className="text-[#272343] hover:underline hover:text-[#029FAE]">
+              Arib
             </a>
           </p>
           <div className="mt-4 flex justify-center space-x-4">
