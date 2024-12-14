@@ -24,36 +24,30 @@ export default function Categories() {
   ];
 
   return (
-    <section className="w-full px-4 py-[7rem] md:px-6">
+    <section className=" w-full px-4 py-[7rem] md:px-6">
       <div className="mx-auto max-w-7xl">
-        <h2 className="text-3xl font-bold tracking-tight  mb-8">
-          Top Categories
-        </h2>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <h2 className="text-3xl font-bold tracking-tight mb-8">Top Categories</h2>
+        <div className=" grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {categories.map((category) => (
             <Link
               key={category.name}
-              href={"/allPages/1"}
-              className="group relative overflow-hidden rounded-lg"
+              href={category.href}
+              className="group aspect-square relative overflow-hidden rounded-lg"
             >
-              <div className="aspect-[4/3] w-full">
-                <Image
-                  src={category.image}
-                  alt={category.name}
-                  className="object-cover transition-transform duration-300 group-hover:scale-105"
-                  priority
-                  width={400}
-                  height={400}
-                />
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent">
+              <Image
+                src={category.image}
+                alt={category.name}
+                layout="fill"
+                objectFit="cover"
+                className="transition-transform duration-300 group-hover:scale-105"
+                priority
+              />
+              <div className=" absolute inset-0 bg-gradient-to-t from-black/90 to-transparent">
                 <div className="absolute bottom-0 p-6">
                   <h3 className="mb-2 font-inter text-xl font-medium text-white">
                     {category.name}
                   </h3>
-                  <p className="font-inter text-sm text-gray-200">
-                    {category.products}
-                  </p>
+                  <p className="font-inter text-sm text-gray-200">{category.products}</p>
                 </div>
               </div>
             </Link>

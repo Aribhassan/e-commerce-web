@@ -38,7 +38,7 @@ const AboutSection = () => {
             Unbeatable prices
           </h3>
           <p className="text-[16px] font-normal text-[#007580] mt-4">
-            For our materials and quality you won’t find better prices anywhere
+            For our materials and quality you would not find better prices anywhere
           </p>
         </div>
 

@@ -12,7 +12,7 @@ interface Product {
   isSale?: boolean;
 }
 
-export default function OurProduct() {
+export default function Featuredproduct() {
   const products: Product[] = [
     {
       id: 1,
@@ -41,40 +41,14 @@ export default function OurProduct() {
       price: 20,
       image: "/04.jpg",
     },
-    {
-      id: 5,
-      title: "Library Stool Chair",
-      price: 20,
-      image: "/05.jpg",
-      isNew: true,
-    },
-    {
-      id: 6,
-      title: "Library Stool Chair",
-      price: 20,
-      originalPrice: 30,
-      image: "/06.jpg",
-      isSale: true,
-    },
-    {
-      id: 7,
-      title: "Library Stool Chair",
-      price: 20,
-      image: "/07.jpg",
-    },
-    {
-      id: 8,
-      title: "Library Stool Chair",
-      price: 20,
-      image: "/01.jpg",
-    },
+    
   ];
 
   return (
     <div className=" container mx-auto px-4 py-20">
-      <h1 className="text-3xl text-center font-semibold text-[#1C1B1F] tracking-tight  mb-8">
+      <h1 className="text-3xl text-start font-semibold text-[#1C1B1F] tracking-tight  mb-8">
         {" "}
-        Our Products
+        Featured Products
       </h1>
 
       <div className=" grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -124,5 +98,5 @@ export default function OurProduct() {
         ))}
       </div>
     </div>
-  );
+  )
 }

@@ -4,9 +4,9 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="flex justify-center items-center">
-      <div className=" w-full max-w-screen-xl h-auto bg-[#F0F2F3] flex flex-col sm:flex-row justify-center items-center px-6 sm:px-10 lg:px-16 py-24">
+      <div className=" w-full max-w-screen-xl h-auto bg-[#F0F2F3] rounded-bl-[48] full flex flex-col sm:flex-row justify-center items-center px-6 sm:px-10 lg:px-16 py-24">
         {/* Left Section */}
-        <div className=" flex flex-col justify-center items-center sm:items-start w-full sm:w-1/2 space-y-4 sm:space-y-6">
+        <div className="relative bottom-24 flex flex-col justify-center items-center sm:items-start w-full sm:w-1/2 space-y-4 sm:space-y-6">
           <h1 className="text-[14px] pt-[70px] sm:pt-[119px] font-normal text-[#272343] text-center sm:text-left">
             WELCOME TO CHAIRY
           </h1>

@@ -72,16 +72,16 @@ export default function AllProduct() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-20">
-      <h1 className="text-3xl text-center font-semibold text-[#1C1B1F] tracking-tight mb-8">
+    <div className="container mx-auto px-4 py-20 overflow-x-hidden">
+      <h1 className="text-3xl text-center font-semibold text-[#1C1B1F] tracking-tight  mb-8">
+        {" "}
         Our Products
       </h1>
 
-      {/* Adjusted grid layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div className=" grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
         {products.map((product) => (
-          <div key={product.id} className="group relative rounded-lg bg-white shadow-md hover:shadow-lg transition-shadow duration-300">
-            <div className="relative aspect-square overflow-hidden rounded-lg">
+          <div key={product.id} className=" group relative rounded-lg bg-white">
+            <div className="relative aspect-square overflow-hidden rounded-xl">
               {product.isNew && (
                 <Badge className="absolute left-3 top-3 bg-emerald-500 hover:bg-emerald-600">
                   New
@@ -89,7 +89,7 @@ export default function AllProduct() {
               )}
               {product.isSale && (
                 <Badge className="absolute left-3 top-3 bg-orange-500 hover:bg-orange-600">
-                  Sale
+                  Sales
                 </Badge>
               )}
               <Link href={"allPages/1"}>
@@ -98,14 +98,13 @@ export default function AllProduct() {
                   alt={product.title}
                   height={400}
                   width={400}
-                  className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                  className="text-[#00B5A5] rounded-xl h-full w-full object-cover transition-transform duration-300 group-hover:scale-105 hover:rounded-xl"
                 />
               </Link>
             </div>
-
-            <div className="mt-4 px-4 flex items-center justify-between">
+            <div className="mt-4 flex items-center justify-between">
               <div>
-                <h3 className="text-sm text-[#1C1B1F]">{product.title}</h3>
+                <h3 className="text-sm text-[#1C1B1F] hover:text-[#00B5A5]">{product.title}</h3>
                 <div className="mt-1 flex items-center gap-2">
                   <span className="text-lg font-medium text-[#1C1B1F]">
                     ${product.price}
@@ -117,7 +116,7 @@ export default function AllProduct() {
                   )}
                 </div>
               </div>
-              <button className="rounded-full bg-[#00B5A5] p-2 text-white transition-colors hover:bg-[#00A294]">
+              <button className="rounded-xl bg-slate-200 p-2 text-black hover:text-white transition-colors hover:bg-[#00A294]">
                 <ShoppingCart className="h-5 w-5" />
                 <span className="sr-only">Add to cart</span>
               </button>
