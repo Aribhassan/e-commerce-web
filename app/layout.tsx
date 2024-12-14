@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css"; // Make sure this exists in the right location
-import Logocart from "@/app/components/logoWithCartButton";
-import Navbar from "@/app/components/Navbar";
-import Footer from "@/app/components/Footer";
-import Header from "@/app/components/header"
+import Logocart from "@/components/logoWithCartButton";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import Header from "@/components/header"
 const inter = Inter({
   subsets: ["latin"],
   weight: ["400"],
