@@ -8,38 +8,41 @@ const poppins = Poppins({ subsets: ["latin"], weight: ["500", "600"] });
 
 const ContactSection = () => {
   return (
-    <div className="w-full max-w-screen-xl h-auto bg-[#F4F4F4] flex flex-wrap items-center justify-between px-8 py-6 sm:px-12 sm:py-8">
-      <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 mb-6 sm:mb-0">
-        <BsTrophy className="w-[52.77px] h-[60px] text-black" />
-        <div className="text-center sm:text-left">
-          <h2 className={`${poppins.className} font-semibold text-[20px] sm:text-[25px]`}>
+    <div className="w-full max-w-screen-xl h-auto bg-[#F4F4F4] flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-8 gap-8">
+      {/* High Quality */}
+      <div className="flex flex-col md:flex-row items-center md:space-x-4 text-center md:text-left">
+        <BsTrophy className="w-14 h-14 text-black mb-4 md:mb-0" />
+        <div>
+          <h2 className={`${poppins.className} font-semibold text-lg md:text-xl`}>
             High Quality
           </h2>
-          <p className={`${poppins.className} font-medium text-[16px] sm:text-[20px] text-[#898989]`}>
+          <p className={`${poppins.className} font-medium text-sm md:text-base text-[#898989]`}>
             crafted from top materials
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4 mb-6 sm:mb-0">
-        <GoVerified className="w-[60px] h-[60px] text-black" />
-        <div className="text-center sm:text-left">
-          <h2 className={`${poppins.className} font-semibold text-[20px] sm:text-[25px]`}>
+      {/* Warranty Protection */}
+      <div className="flex flex-col md:flex-row items-center md:space-x-4 text-center md:text-left">
+        <GoVerified className="w-14 h-14 text-black mb-4 md:mb-0" />
+        <div>
+          <h2 className={`${poppins.className} font-semibold text-lg md:text-xl`}>
             Warranty Protection
           </h2>
-          <p className={`${poppins.className} font-medium text-[16px] sm:text-[20px] text-[#898989]`}>
+          <p className={`${poppins.className} font-medium text-sm md:text-base text-[#898989]`}>
             Over 2 years
           </p>
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center space-x-0 sm:space-x-4">
-        <MdSupportAgent className="w-[52.77px] h-[60px] text-black" />
-        <div className="text-center sm:text-left">
-          <h2 className={`${poppins.className} font-semibold text-[20px] sm:text-[25px]`}>
+      {/* 24/7 Support */}
+      <div className="flex flex-col md:flex-row items-center md:space-x-4 text-center md:text-left">
+        <MdSupportAgent className="w-14 h-14 text-black mb-4 md:mb-0" />
+        <div>
+          <h2 className={`${poppins.className} font-semibold text-lg md:text-xl`}>
             24 / 7 Support
           </h2>
-          <p className={`${poppins.className} font-medium text-[16px] sm:text-[20px] text-[#898989]`}>
+          <p className={`${poppins.className} font-medium text-sm md:text-base text-[#898989]`}>
             Dedicated support
           </p>
         </div>

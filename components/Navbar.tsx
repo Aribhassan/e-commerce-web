@@ -35,7 +35,7 @@ const Navbar = () => {
 
         {/* Contact Information (Desktop only) */}
         <div className="hidden md:flex items-center gap-4 ml-auto">
-          <span className="font-normal text-[#636270] text-[14px]">Contact:</span>
+          <Link href="/contact" className="font-normal text-[#636270] text-[14px]">Contact:</Link>
           <span className="font-medium text-[#272343] text-[14px]">
             (808) 555-0111
           </span>
